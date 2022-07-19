@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="test">
+<meta name="description" content="test">
+<link rel="stylesheet" href="styles.css">
+<style>
+body {background-color:#000000;background-image:url(https://i.imgur.com/V2DLXyE.png);background-repeat:no-repeat;background-position:top center;background-attachment:scroll;}
+h1{font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
+p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
+</style>
+</head>
+<body>
+<style type="text/css">
+audio {visibility: hidden; height: 0; width: 0; position: absolute; top: -300px; left: -300px;}
+#pauseplay {float: right; width: 48px; height: 48px; overflow: hidden; cursor: pointer;margin-top: 850px;}
+</style>
+<div style="width:50px; margin:0 auto;text-align:center"">
+<audio autoplay loop>
+<source src="123.mp3" type="audio/mpeg">
+</audio>
+<img id="pauseplay" src="images/volume.png" alt="button" title="Play/Pause">
+
+
+<script type="text/javascript">
+(function(){
+	var playing = !!('ontouchstart' in window) || !!('ontouchstart' in document.documentElement) || !!window.ontouchstart || (!!window.Touch && !!window.Touch.length) || !!window.onmsgesturechange || (window.DocumentTouch && window.document instanceof window.DocumentTouch),
+	snd = document.getElementsByTagName('audio')[0],
+	ctrl = document.getElementById('pauseplay');
+	playing = !playing;
+	ctrl.title = playing? 'Pause' : 'Play';
+	if(playing){snd.autoplay = false; ctrl.src = 'images/volume.png';}
+	ctrl.addEventListener('click', function(){
+
+			snd.play();
+
+		playing = !playing;
+		ctrl.title = playing? 'Pause' : 'Play';
+		ctrl.src = playing? 'images/volume.png' : 'images/volume.png';
+	}, false);
+})();
+
+window.onload = function() 
+{
+    document.body.addEventListener("mousemove", function(event)
+  {
+    var x = event.pageX - 6 + "px"
+    var y = event.pageY + "px"
+    document.getElementById("cursor").style.left = x;
+    document.getElementById("cursor").style.top = y;
+  })
+};
+</script>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<center><h2 style="color:Red;">19.07.2022 23:00</h2></center>
+<center><h2 style="color:Red;">Stolen data reveal</h2></center>
+<div class='wrapper'>
+  <div class='time-part-wrapper'>
+    <div class='time-part minutes tens'>
+    </div>
+    <div class='time-part minutes ones'>
+      <div class='digit-wrapper'>
+
+        <span class='digit'>9</span>
+        <span class='digit'>8</span>
+        <span class='digit'>7</span>
+        <span class='digit'>6</span>
+        <span class='digit'>5</span>
+        <span class='digit'>4</span>
+        <span class='digit'>3</span>
+        <span class='digit'>2</span>
+        <span class='digit'>1</span>
+        <span class='digit'>0</span>
+      </div>
+    </div>
+  </div>
+  <div class='time-part-wrapper'>
+    <div class='time-part seconds tens'>
+      <div class='digit-wrapper'>
+        <span class='digit'>0</span>
+        <span class='digit'>5</span>
+        <span class='digit'>4</span>
+        <span class='digit'>3</span>
+        <span class='digit'>2</span>
+        <span class='digit'>1</span>
+        <span class='digit'>0</span>
+      </div>
+    </div>
+    <div class='time-part seconds ones'>
+      <div class='digit-wrapper'>
+        <span class='digit'>0</span>
+        <span class='digit'>9</span>
+        <span class='digit'>8</span>
+        <span class='digit'>7</span>
+        <span class='digit'>6</span>
+        <span class='digit'>5</span>
+        <span class='digit'>4</span>
+        <span class='digit'>3</span>
+        <span class='digit'>2</span>
+        <span class='digit'>1</span>
+        <span class='digit'>0</span>
+      </div>
+    </div>
+  </div>
+  <div class='time-part-wrapper'>
+    <div class='time-part hundredths tens'>
+      <div class='digit-wrapper'>
+        <span class='digit'>0</span>
+        <span class='digit'>9</span>
+        <span class='digit'>8</span>
+        <span class='digit'>7</span>
+        <span class='digit'>6</span>
+        <span class='digit'>5</span>
+        <span class='digit'>4</span>
+        <span class='digit'>3</span>
+        <span class='digit'>2</span>
+        <span class='digit'>1</span>
+        <span class='digit'>0</span>
+      </div>
+    </div>
+    <div class='time-part hundredths ones'>
+      <div class='digit-wrapper'>
+        <span class='digit'>0</span>
+        <span class='digit'>9</span>
+        <span class='digit'>8</span>
+        <span class='digit'>7</span>
+        <span class='digit'>6</span>
+        <span class='digit'>5</span>
+        <span class='digit'>4</span>
+        <span class='digit'>3</span>
+        <span class='digit'>2</span>
+        <span class='digit'>1</span>
+        <span class='digit'>0</span>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
